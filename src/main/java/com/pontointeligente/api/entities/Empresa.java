@@ -31,7 +31,7 @@ public class Empresa implements Serializable {
 	private String cnpj;
 	@Column(name = "data_criacao", nullable = false)
 	private Date dataCriacao;
-	@Column(name = "data_criacao", nullable = false)
+	@Column(name = "data_atualizacao", nullable = false)
 	private Date dataAtualizacao;
 	@OneToMany(mappedBy = "empresa", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
 	private List<Funcionario> funcionarios;
